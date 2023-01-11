@@ -16,7 +16,7 @@ import java.util.Optional;
 @ExtendWith(MockitoExtension.class)
 class ClientRepositoryAdapterTest {
     @InjectMocks
-    ClientRepositoryAdapter clientRepositoryAdapter;
+    ClientRepositoryAdapterImpl clientRepositoryAdapter;
 
     @Mock
     ClientRepository clienteRepository;

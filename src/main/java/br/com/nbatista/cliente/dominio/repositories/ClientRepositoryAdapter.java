@@ -6,7 +6,7 @@ import org.springframework.stereotype.Component;
 import java.util.Optional;
 
 @Component
-public interface ClienteRepository {
+public interface ClientRepositoryAdapter {
     Cliente save(Cliente cliente);
 
     Optional<Cliente> findById(Long id);

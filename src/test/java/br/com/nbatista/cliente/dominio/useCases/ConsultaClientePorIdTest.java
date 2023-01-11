@@ -2,7 +2,7 @@ package br.com.nbatista.cliente.dominio.useCases;
 
 import br.com.nbatista.cliente.dominio.entidades.Cliente;
 import br.com.nbatista.cliente.dominio.exceptions.ClientNotFoundExeption;
-import br.com.nbatista.cliente.infraestrutura.repository.adapters.ClientRepositoryAdapter;
+import br.com.nbatista.cliente.infraestrutura.repository.adapters.ClientRepositoryAdapterImpl;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
 import org.mockito.InjectMocks;
@@ -20,7 +20,7 @@ class ConsultaClientePorIdTest {
     private ConsultaClientePorId consultaClientePorId;
 
     @Mock
-    ClientRepositoryAdapter repository;
+    ClientRepositoryAdapterImpl repository;
 
     @Test
     void deveSerPossivelConsultarUmClienteInformandoId(){
